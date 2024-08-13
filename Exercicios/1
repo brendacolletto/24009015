@@ -1,0 +1,32 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+int main() {
+    // Variável para armazenar o número de visitantes
+    int numVisitantes = 0;
+
+    // Lê o número de visitantes do arquivo (se existir)
+    std::ifstream arquivoEntrada("visitantes.txt");
+    if (arquivoEntrada.is_open()) {
+        arquivoEntrada >> numVisitantes;
+        arquivoEntrada.close();
+    }
+
+    // Incrementa o número de visitantes
+    numVisitantes++;
+
+    // Exibe mensagem de confirmação
+    std::cout << "Visitante registrado com sucesso. Total de visitantes: " << numVisitantes << std::endl;
+
+    // Salva o número de visitantes atualizado no arquivo
+    std::ofstream arquivoSaida("visitantes.txt");
+    if (arquivoSaida.is_open()) {
+        arquivoSaida << numVisitantes;
+        arquivoSaida.close();
+    } else {
+        std::cerr << "Erro ao salvar o número de visitantes." << std::endl;
+    }
+
+    return 0;
+}
