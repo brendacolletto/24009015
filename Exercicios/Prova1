@@ -1,0 +1,85 @@
+//1-c
+//2-b
+
+//3)a
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+int main ()
+{
+
+  double C, F ;
+
+  cout <<("\nEntre com os graus em Fahrenheit:");
+  cin >> F;
+
+  C = (F-32.0)*(5.0/9.0);
+
+  printf("\nGraus em Celsius: %lf", C);
+
+  return 0;
+
+}
+
+//b
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+int main ()
+{
+
+  int C, F ;
+
+  cout <<("\nEntre com os graus em Fahrenheit:");
+  cin >> F;
+
+  C = (F-32)*(5/9);
+
+  printf("\nGraus em Celsius: %d", C);
+
+  return 0;
+
+}
+// B sempre dara zero, ja que como utilizamos int e o resultado esta em um numero decimal, o programa nao consegue reproduzir o numero.
+
+//4
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+int main ()
+{
+
+   float C;
+
+   cout << ("\nEntre com a temperatura em Celsius:");
+   cin >> C;
+
+
+   if (C<= 0)
+   {
+       printf("\nGeleira - Temperatura muito fria!");
+   }
+   else if ((C>=1)&&(C<=15))
+   {
+    printf("\nFrio - Pode precisar de um casaco!");
+   }
+   else if ((C>=16)&&(C<=25))
+   {
+    printf("\nAgradavel - Tempo bom para sair!");
+   }
+   else if ((C>=26)&&(C<=35))
+   {
+     printf("\nQuente - Ótimo para um dia de praia!");
+   }
+   else if(C>35)
+   {
+      printf("\nMuito quente - Mantenha-se hidratado!");
+   }
+    return 0;
+}
