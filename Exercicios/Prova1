@@ -44,7 +44,7 @@ int main ()
   return 0;
 
 }
-//A) C = (15-32.0)*(5.0/9.0) = -9.4 ; B sempre dara zero, ja que como utilizamos int e o resultado esta em um numero decimal, o programa nao consegue reproduzir o numero.
+//A) C = (15-32.0)*(5.0/9.0) = -9.4 ; B) B sempre dara zero, ja que como utilizamos int e o resultado esta em um numero decimal, o programa nao consegue reproduzir o numero.
 
 //4
 #include<iostream>
