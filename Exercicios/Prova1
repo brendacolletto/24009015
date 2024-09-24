@@ -1,7 +1,7 @@
 //1-c
 //2-b
 
-//3)a
+//3)A
 #include<iostream>
 #include<math.h>
 
@@ -23,7 +23,7 @@ int main ()
 
 }
 
-//b
+//B
 #include<iostream>
 #include<math.h>
 
@@ -44,7 +44,7 @@ int main ()
   return 0;
 
 }
-// B sempre dara zero, ja que como utilizamos int e o resultado esta em um numero decimal, o programa nao consegue reproduzir o numero.
+//A) C = (15-32.0)*(5.0/9.0) = -9.4 ; B sempre dara zero, ja que como utilizamos int e o resultado esta em um numero decimal, o programa nao consegue reproduzir o numero.
 
 //4
 #include<iostream>
@@ -81,5 +81,44 @@ int main ()
    {
       printf("\nMuito quente - Mantenha-se hidratado!");
    }
+    return 0;
+}
+//5
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+int main ()
+{
+    float C;
+
+    cout <<("\nEntre com a temperatura atual do deposito:");
+    cin >> C;
+
+    if (C<-10)
+    {
+
+       printf("\nRisco Baixo - Armazenamento ideal para alimentos congelados");
+
+    }
+    else if ((C>=-10)&&(C<=0))
+    {
+
+      printf("\nRisco Moderado - Condicoes aceitaveis para armazenamento refrigerado");
+
+    }
+    else if((C>=1)&&(C<=10)||(C=15))
+    {
+
+     printf("\nRisco Elevado - Monitore a temperatura");
+
+    }
+    else if ((C>10)&&(C !=15))
+    { 
+
+       printf("\nRisco Crítico - Acao Imediata Necessaria!");
+
+    }
     return 0;
 }
